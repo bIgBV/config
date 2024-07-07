@@ -191,13 +191,21 @@ require('lazy').setup({
   },
 
   {
-    -- Theme inspired by Atom
-    'navarasu/onedark.nvim',
-    priority = 1000,
+    "rebelot/kanagawa.nvim",
+    priority = 2000,
     config = function()
-      vim.cmd.colorscheme 'onedark'
-    end,
+      vim.cmd.colorscheme 'kanagawa-wave'
+    end
   },
+
+  --{
+  --  -- Theme inspired by Atom
+  --  'navarasu/onedark.nvim',
+  --  priority = 1000,
+  --  config = function()
+  --    vim.cmd.colorscheme 'onedark'
+  --  end,
+  --},
 
   {
     -- Set lualine as statusline
@@ -663,6 +671,8 @@ cmp.setup {
     { name = 'path' },
   },
 }
+
+vim.g.have_nerd_font = true
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
